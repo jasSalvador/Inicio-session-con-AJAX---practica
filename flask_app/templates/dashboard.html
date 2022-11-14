@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container col-6 mx-auto">
+        <header class="d-flex justify-content-between align-items-center my-4">
+            <h1>Bienvenid@ {{user.first_name}}</h1>
+            <a href="/logout" class="btn btn-danger">Cerrar Sesión</a>
+        </header>
+
+        <hr class="my-4 py-2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, similique aliquam, temporibus incidunt distinctio impedit eveniet illo possimus, quod ratione rem perferendis nihil soluta esse cupiditate ea officiis dolorum minima.
+        
+    </div>
+</body>
+</html>
+
+<!--Para confirmar, entonces, todas las variables almacenadas en session, estarán disponibles en todas los HTML hasta 
+que se ejecute session.clear() y mientras no demos click en logout, podemos regresar a las páginas como dashboard ?-->
